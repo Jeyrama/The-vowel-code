@@ -31,3 +31,19 @@ function decode(string) {
 }
 
 // or
+
+function encode(string) {
+  let vowelMapping = {'a': 1, 'e': 2, 'i': 3, 'o': 4, 'u': 5};
+  return codeStringGivenMapping(string, vowelMapping);
+}
+
+function decode(string) {
+  let vowelMapping = {example};
+  return codeStringGivenMapping(string, vowelMapping);
+}
+
+function codeStringGivenMapping(string, mapping) {
+  return string.split('').map(function(char) {
+    return mapping[char] || char;
+  }).join('');
+}

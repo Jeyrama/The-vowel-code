@@ -38,7 +38,7 @@ function encode(string) {
 }
 
 function decode(string) {
-  let vowelMapping = {example};
+  let vowelMapping = {'1': 'a', '2': 'e', '3': 'i', '4': 'o', '5': 'u'};
   return codeStringGivenMapping(string, vowelMapping);
 }
 
